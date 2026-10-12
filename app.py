@@ -420,7 +420,7 @@ def render_command_centre() -> None:
         snapshot = sim["history"][history_index]
         truth_mode = st.session_state.instructor_truth
         if truth_mode:
-            st.warning("INSTRUCTOR INFORMATION — complete ground truth is visible here only. The agent still receives its partial observation.", icon="⚑")
+            st.warning("INSTRUCTOR INFORMATION — complete ground truth is visible here only. The agent still receives its partial observation.", icon="🚩")
         st.markdown(battlefield_html(snapshot, instructor_truth=truth_mode), unsafe_allow_html=True)
         st.markdown(legend_html(), unsafe_allow_html=True)
         st.caption("The objective is known from the mission briefing. Cell contents remain veiled until observed.")
